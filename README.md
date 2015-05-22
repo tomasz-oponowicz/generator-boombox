@@ -6,6 +6,8 @@
 
 Yeoman generator for front-end library. _Note:_ Project is still under development.
 
+## TL;DR
+
 The template focues on:
 
 * document: `jsdoc`;
