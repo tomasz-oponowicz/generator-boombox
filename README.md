@@ -4,6 +4,11 @@
 
 # generator-boombox
 
-Yeoman generator for front-end library
+Yeoman generator for front-end library (_Note:_ Project is still under development).
 
-_Note:_ Project is still under development.
+The template focues on:
+
+* documentation: `jsdoc`;
+* testing: `jsonhint`, `jshint`, `jscs`, `jasmine`;
+* preprocessor: `browserify`, `less`, `jade`;
+* optimalization: `uglify`, `minify-css`, `minify-html`, `imagemin`;
