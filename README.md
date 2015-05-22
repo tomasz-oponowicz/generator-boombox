@@ -4,7 +4,7 @@
 
 # generator-boombox
 
-Yeoman generator for front-end library (_Note:_ Project is still under development).
+Yeoman generator for front-end library. _Note:_ Project is still under development.
 
 The template focues on:
 
