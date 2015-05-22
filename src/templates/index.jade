@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    title= project.name
+    meta(charset="UTF-8")
+    // blank favicon
+    link(href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon")
+    link(rel="stylesheet" type="text/css" href="./styles/#{project.name}.min.css")
+    style.
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-family: sans-serif;
+      }
+  body
+    div#example1
+    footer= project.banner
+    script(type="text/javascript" src="./scripts/#{project.name}.min.js")
+    script(type="text/javascript").
+      #{project.mainClass}('#example1');

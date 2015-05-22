@@ -1,0 +1,25 @@
+{
+  "name": "generator-boombox",
+  "version": "0.0.1",
+  "authors": [
+    "Tomasz Oponowicz"
+  ],
+  "description": "Yeoman generator for front-end library",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "scaffold",
+    "component",
+    "front-end",
+    "library"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
