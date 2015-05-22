@@ -10,5 +10,5 @@ The template focues on:
 
 * documentation: `jsdoc`;
 * testing: `jsonhint`, `jshint`, `jscs`, `jasmine`;
-* preprocessor: `browserify`, `less`, `jade`;
+* pre-processing: `browserify`, `less`, `jade`;
 * optimalization: `uglify`, `minify-css`, `minify-html`, `imagemin`;
