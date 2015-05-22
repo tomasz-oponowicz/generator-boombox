@@ -8,7 +8,8 @@ Yeoman generator for front-end library. _Note:_ Project is still under developme
 
 The template focues on:
 
-* documentation: `jsdoc`;
-* testing: `jsonhint`, `jshint`, `jscs`, `jasmine`;
-* pre-processing: `browserify`, `less`, `jade`;
-* optimalization: `uglify`, `minify-css`, `minify-html`, `imagemin`;
+* document: `jsdoc`;
+* test: `jsonhint`, `jshint`, `jscs`, `jasmine`;
+* transform: `browserify`, `less`, `jade`;
+* optimize: `uglify`, `minify-css`, `minify-html`, `imagemin`;
+* debug: `sourcempas`;
