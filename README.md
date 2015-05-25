@@ -13,7 +13,3 @@ The template focues on:
 * transform: `browserify`, `less`, `jade`;
 * optimize: `uglify`, `minify-css`, `minify-html`, `imagemin`, `sprity` _(upcoming)_;
 * debug: `sourcempas`;
-
-## Credits
-
-* The boombox graphic has been created by [RetroVector](http://retrovectors.com/70s-80s/boombox-1/);
