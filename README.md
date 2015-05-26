@@ -2,7 +2,9 @@
 
 [![Build Status](https://travis-ci.org/tomasz-oponowicz/generator-boombox.svg?branch=master)](https://travis-ci.org/tomasz-oponowicz/generator-boombox)
 
-Yeoman generator for front-end library. _Note:_ Project is still under development.
+> Project is still under development.
+
+Yeoman generator for front-end library. 
 
 ## TL;DR
 
@@ -13,3 +15,7 @@ The template focues on:
 * transform: `browserify`, `less`, `jade`;
 * optimize: `uglify`, `minify-css`, `minify-html`, `imagemin`, `sprity` _(upcoming)_;
 * debug: `sourcempas`;
+
+## License
+
+MIT

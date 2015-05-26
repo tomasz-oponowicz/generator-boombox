@@ -1,45 +1,32 @@
 {
   "name": "generator-boombox",
-  "version": "0.0.1",
-  "description": "Yeoman generator for front-end library",
-  "main": "index.js",
-  "scripts": {
-    "test": "gulp test"
-  },
-  "keywords": [
-    "yeoman-generator",
-    "scaffold",
-    "framework",
-    "component",
-    "front-end",
-    "library"
-  ],
-  "author": "Tomasz Oponowicz",
+  "version": "0.0.0",
+  "description": "Yeoman generator",
   "license": "MIT",
+  "main": "app/index.js",
+  "repository": "tomasz-oponowicz/generator-boombox",
+  "author": {
+    "name": "Tomasz Oponowicz",
+    "email": "tomasz.oponowicz@gmail.com",
+    "url": "https://github.com/tomasz-oponowicz"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "github": "^0.2.4",
+    "lodash": "^3.9.3",
+    "yeoman-generator": "^0.19.0",
+    "yosay": "^1.0.2"
+  },
   "devDependencies": {
-    "del": "^1.1.1",
-    "gulp": "^3.8.11",
-    "gulp-browserify": "^0.5.1",
-    "gulp-connect": "^2.2.0",
-    "gulp-header": "^1.2.2",
-    "gulp-imagemin": "^2.2.1",
-    "gulp-jade": "^1.0.1",
-    "gulp-jasmine": "^2.0.1",
-    "gulp-jscs": "^1.6.0",
-    "gulp-jshint": "^1.10.0",
-    "gulp-jsonlint": "^1.0.2",
-    "gulp-less": "^3.0.3",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-minify-css": "^1.1.1",
-    "gulp-minify-html": "^1.0.2",
-    "gulp-plumber": "^1.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-shell": "^0.4.1",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.2.0",
-    "gulp-util": "^3.0.4",
-    "jsdoc": "^3.3.0",
-    "jshint-reporter-jscs": "^0.1.0",
-    "lodash": "^3.9.1"
+    "mocha": "*"
   }
 }

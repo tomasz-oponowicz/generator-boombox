@@ -3,13 +3,11 @@
 var project = require('./package.json');
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')({ pattern: '*' });
-var _ = require('lodash');
 
-// Convert 'generator-boombox' into 'GeneratorBoombox'.
-project.mainClass = _.capitalize(_.camelCase(project.name));
+project.mainClass = '<%= appNamespace %>';
 
-project.banner = _.template('/* <%= name %> v<%= version %>, ' +
-  'license <%= license %> */\n')(project);
+project.banner = '/* ' + project.name + 'v' + project.version + ', ' +
+  'license ' + project.license + ' */\n';
 
 // Workaround: gulp-jsdoc doesn't support global functions.
 gulp.task('docs', $.shell.task('node_modules/jsdoc/jsdoc.js' +
