@@ -40,6 +40,12 @@ module.exports = yeoman.generators.Base.extend({
         name: 'description',
         message: 'What\'s the short description of this project?',
         default: 'Awesome app',
+      },
+      {
+        type: 'confirm',
+        name: 'useTravis',
+        message: 'Do you want to use Travis?',
+        default: true,
       }
     ];
 
@@ -94,6 +100,12 @@ module.exports = yeoman.generators.Base.extend({
     },
 
     projectfiles: function () {
+      if (this.props.useTravis) {
+        this.fs.copy(
+          this.templatePath('travis.yml'),
+          this.destinationPath('.travis.yml')
+        ); 
+      }
       this.fs.copy(
         this.templatePath('editorconfig'),
         this.destinationPath('.editorconfig')
@@ -117,10 +129,6 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('jshintrc'),
         this.destinationPath('.jshintrc')
-      );
-      this.fs.copy(
-        this.templatePath('travis.yml'),
-        this.destinationPath('.travis.yml')
       );
       this.fs.copy(
         this.templatePath('src'),
