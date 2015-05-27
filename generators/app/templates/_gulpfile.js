@@ -83,7 +83,7 @@ gulp.task('jslint', function() {
 });
 
 gulp.task('jsonlint', function() {
-  return gulp.src(['package.json', 'bower.json'])
+  return gulp.src(['.jscsrc', '.jshintrc', 'package.json'<% if (useBower) { %>, 'bower.json'<% } %>])
     .pipe($.jsonlint())
     .pipe($.jsonlint.reporter());
 });
