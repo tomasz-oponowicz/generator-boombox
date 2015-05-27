@@ -6,7 +6,7 @@ var $ = require('gulp-load-plugins')({ pattern: '*' });
 
 project.mainClass = '<%= appNamespace %>';
 
-project.banner = '/* ' + project.name + 'v' + project.version + ', ' +
+project.banner = '/* ' + project.name + ' v' + project.version + ', ' +
   'license ' + project.license + ' */\n';
 
 // Workaround: gulp-jsdoc doesn't support global functions.
