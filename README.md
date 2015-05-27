@@ -16,6 +16,16 @@ The template focues on:
 * optimize: `uglify`, `minify-css`, `minify-html`, `imagemin`, `sprity` _(upcoming)_;
 * debug: `sourcempas`;
 
+## Setup
+
+    git clone git@github.com:tomasz-oponowicz/generator-boombox.git
+    cd generator-boombox
+    npm link
+
+## Usage
+
+    yo boombox [appName]
+
 ## License
 
 MIT
