@@ -4,11 +4,11 @@
 
 > Project is still under development.
 
-Yeoman generator for front-end library. 
+Yeoman generator for a front-end component. 
 
 ## TL;DR
 
-The template focues on:
+The generator focues on:
 
 * document: `jsdoc`;
 * test: `jsonlint`, `lesslint` _(upcoming)_,`jshint`, `jscs`, `jasmine`;
@@ -18,7 +18,7 @@ The template focues on:
 
 ## Setup
 
-Install the generator locally:
+Install the Boombox locally:
 
     git clone git@github.com:tomasz-oponowicz/generator-boombox.git
     cd generator-boombox
@@ -26,7 +26,7 @@ Install the generator locally:
 
 ## Usage
 
-Create a new application using generator:
+Create a new application using the Boombox:
 
     yo boombox [appName]
 
