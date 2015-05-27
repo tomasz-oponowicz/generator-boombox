@@ -28,6 +28,12 @@ Create a new application using the Boombox:
 
     yo boombox [appName]
 
+## Changelog
+
+### 1.0.0
+
+* First release;
+
 ## License
 
 MIT
