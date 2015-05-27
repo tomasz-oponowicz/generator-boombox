@@ -44,7 +44,13 @@ module.exports = yeoman.generators.Base.extend({
       {
         type: 'confirm',
         name: 'useTravis',
-        message: 'Do you want to use Travis?',
+        message: 'Do you want to use the Travis?',
+        default: true,
+      },
+      {
+        type: 'confirm',
+        name: 'useBower',
+        message: 'Do you want to use the Bower?',
         default: true,
       }
     ];
@@ -72,14 +78,16 @@ module.exports = yeoman.generators.Base.extend({
 
   writing: {
     app: function () {
+      if (this.props.useBower) {
+        this.fs.copyTpl(
+          this.templatePath('_bower.json'),
+          this.destinationPath('bower.json'),
+          this.props
+        );
+      }
       this.fs.copyTpl(
         this.templatePath('_package.json'),
         this.destinationPath('package.json'),
-        this.props
-      );
-      this.fs.copyTpl(
-        this.templatePath('_bower.json'),
-        this.destinationPath('bower.json'),
         this.props
       );
       this.fs.copyTpl(
@@ -142,6 +150,6 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   install: function () {
-    this.installDependencies();
+    this.installDependencies({ bower: this.props.useBower });
   }
 });
