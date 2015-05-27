@@ -22,7 +22,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var util = require('gulp-util');
 
-project.mainClass = '<%= appNamespace %>';
+project.namespace = '<%= appNamespace %>';
 
 project.banner = '/* ' + project.name + ' v' + project.version + ', ' +
   'license ' + project.license + ' */\n';
@@ -35,7 +35,7 @@ gulp.task('scripts', function() {
   return gulp.src('src/scripts/main.js')
     .pipe(plumber())
     .pipe(sourcemaps.init())
-      .pipe(browserify({ standalone: project.mainClass }))
+      .pipe(browserify({ standalone: project.namespace }))
       .pipe(rename(project.name + '.js'))
       .pipe(gulp.dest('build/scripts'))
       .pipe(uglify())
