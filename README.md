@@ -2,8 +2,6 @@
 
 [![Build Status](https://travis-ci.org/tomasz-oponowicz/generator-boombox.svg?branch=master)](https://travis-ci.org/tomasz-oponowicz/generator-boombox)
 
-> Project is still under development.
-
 Yeoman generator for a front-end component. 
 
 ## TL;DR
