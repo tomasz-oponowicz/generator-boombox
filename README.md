@@ -18,11 +18,15 @@ The template focues on:
 
 ## Setup
 
+Install the generator locally:
+
     git clone git@github.com:tomasz-oponowicz/generator-boombox.git
     cd generator-boombox
     npm link
 
 ## Usage
+
+Create a new application using generator:
 
     yo boombox [appName]
 
